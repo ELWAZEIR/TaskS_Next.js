@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #008ce9;
+    padding: 10px 60px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header ul a {
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+header ul a:hover,
+header ul a.active {
+
+    background-color: #00000042;
+}
+
+.posts-page {
+    padding: 80px;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+}
+
+.post {
+    background-color: #e2e2e2;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+.post a {
+    width: 120px;
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #008ce9;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+footer div {
+    display: flex;
+    gap: 10px;
+}
+
+footer button {
+    width: 60px;
+    cursor: pointer;
+}
+
+.sidebar {
+    min-height: 100vh;
+    background-color: aqua;
+}
